@@ -130,17 +130,84 @@ table {
 * {
   box-sizing: border-box;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+  background: slategrey;
+}
+nav a {
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 2rem;
+  color: white;
+}
 html,
 body {
   height: 100%;
   width: 90vw;
   margin: auto;
   box-align: center;
+  font-size: 62.5%;
   font-family: 'Hepta Slab', serif;
 }
 .container {
   width: 100%;
   background: #d1dfb9;
+}
+.bio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bio img {
+  width: 40%;
+  height: auto;
+}
+.bio .biotext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+.bio .biotext h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+.bio .biotext p {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.bio .biotext button {
+  align-content: center;
+  width: 48%;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  background: slategrey;
+}
+.lists {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background: slategrey;
+  color: white;
+  font-size: 2rem;
+}
+.lists li {
+  padding: 1rem;
+  list-style-type: disc;
+}
+.lists h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
 }
 @font-face {
   font-family: 'Hepta Slab';

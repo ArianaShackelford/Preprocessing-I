@@ -2,7 +2,8 @@ html, body {
 	height: 100%;
 	width: 90vw;
 	margin: auto;
-	box-align: center;
+    box-align: center;
+    font-size: 62.5%;
 	font-family: @font-style;
 }
 
@@ -10,3 +11,52 @@ html, body {
 	width: 100%;
 	background: @main-color;
 }
+
+.bio{
+    .displayflex(space-evenly, center);
+    img{
+        width: 40%;
+        height: auto;
+    }//img closing
+    .biotext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        h1{
+            font-size: 2.5rem;
+            margin: 1rem;
+        }//h1 closing
+
+        p{
+            font-size: 1.5rem;
+            margin: 1rem;
+        }//p closing
+
+        button{
+            align-content: center;
+            .buttonmix();
+        }
+    }
+}//bio closure
+
+.lists{
+    width: 100%;
+    height: 30%;
+    .displayflex(space-around,center);
+    padding: 2rem;
+    background: @accent-color;
+    color: @text-light;
+    font-size: 2rem;
+
+    li{
+        padding: 1rem;
+        list-style-type: disc;
+    }//li closure
+
+    h2{
+        font-size: 2.5rem;
+        text-decoration: underline;
+    }//h2 closure
+}//lists closure
