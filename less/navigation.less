@@ -1,0 +1,23 @@
+nav{
+   .displayflex(space-evenly, center);
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    background: @accent-color;
+
+    @media (max-width:500px){
+        flex-direction: column;
+        height: auto;
+        border-bottom: dashed 1px white;
+    }
+    a{
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 2rem;
+        color: @text-light;
+
+        @media (max-width:500px){
+            border-bottom: dashed 1px white;
+        }        
+    }//a closing
+}//nav closing
